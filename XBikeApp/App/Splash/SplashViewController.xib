@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="XBikeApp" customModuleProvider="target">
+            <connections>
+                <outlet property="image" destination="bAH-XW-bAX" id="J5T-RQ-39b"/>
+                <outlet property="loadingView" destination="bD9-FH-L0r" id="pWU-eb-bDS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XBike" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJD-Mj-qRg">
+                    <rect key="frame" x="118" y="300.5" width="139.5" height="66"/>
+                    <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="50"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bike" translatesAutoresizingMaskIntoConstraints="NO" id="bAH-XW-bAX">
+                    <rect key="frame" x="62.5" y="100.5" width="250" height="250"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="5vL-HH-NLq"/>
+                        <constraint firstAttribute="width" constant="250" id="mm3-HF-tQ3"/>
+                    </constraints>
+                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bD9-FH-L0r">
+                    <rect key="frame" x="137.5" y="387" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="IwF-eu-fnl"/>
+                        <constraint firstAttribute="width" constant="100" id="KaH-Fc-3kQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <constraints>
+                <constraint firstItem="bD9-FH-L0r" firstAttribute="top" secondItem="sJD-Mj-qRg" secondAttribute="bottom" constant="20.5" id="6h5-Xw-hAG"/>
+                <constraint firstItem="bAH-XW-bAX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7wj-L3-5lU"/>
+                <constraint firstItem="sJD-Mj-qRg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g35-RS-f5R"/>
+                <constraint firstItem="bD9-FH-L0r" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mqH-WG-Ufb"/>
+                <constraint firstItem="sJD-Mj-qRg" firstAttribute="top" secondItem="bAH-XW-bAX" secondAttribute="bottom" constant="-50" id="pLy-N3-EmY"/>
+                <constraint firstItem="sJD-Mj-qRg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rz6-yI-d2S"/>
+            </constraints>
+            <point key="canvasLocation" x="135" y="72"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bike" width="512" height="300"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
